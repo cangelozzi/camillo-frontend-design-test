@@ -1,0 +1,28 @@
+{
+  "name": "camillo_design-code--form",
+  "version": "1.0.0",
+  "description": "frontend design test",
+  "main": "js/app.js",
+  "scripts": {
+    "dev": "gulp watch & gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cangelozzi/camillo-frontend-design-test.git"
+  },
+  "author": "camillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cangelozzi/camillo-frontend-design-test/issues"
+  },
+  "homepage": "https://github.com/cangelozzi/camillo-frontend-design-test#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.9.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp-imagemin": "^4.1.0"
+  }
+}
