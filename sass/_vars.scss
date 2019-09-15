@@ -1,12 +1,29 @@
 //! Main website variables
-$bg_site: #464646;
+$bg_site: #eceff1;
+$border_site: 4px solid #f5f5f5;
+$color-black: #303030;
+$color-white: #fff;
 
-//! Popover variables
-$bg_pop: #fff;
-$top_bottom_elements: #f5f5f5;
-$red_pop: #9f173d;
+//! brand colors
+$brand_primary: #9013fe;
+$brand_primay_gradient: linear-gradient(41.55deg, #941bff 0%, #f185ce 100%);
+$brand_secondary: #2dcdd8;
+$brand_secondary_gradient: linear-gradient(221.55deg, #67e2b3 0%, #2dcdd8 100%);
+$success_bg: #7ed321;
+$success_border: 4px solid #b7e08a;
+$warning_bg: #f96c44;
+$warning_border: 4px solid #f3a58f;
+$danger_bg: #d0021b;
+$danger_border: 4px solid #e78490;
 
-//! Font variables
-$futura: 'futura-pt', sans-serif;
-$frdisp: 'freight-display-pro', serif;
-$smallfont: #febed5;
+//! Typography
+$header5: 18px;
+$header4: 22px;
+$header3: 26px;
+$header2: 30px;
+$header1: 36px;
+$link_underline: 3px solid #3380ff;
+
+//! sections
+$header_bg: #272930;
+$header_signup_bg: linear-gradient(41.55deg, #941bff 0%, #f559c2 100%);

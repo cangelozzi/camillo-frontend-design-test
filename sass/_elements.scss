@@ -1,0 +1,13 @@
+#signup__btn {
+    width: 40%;
+    border-radius: 15px;
+    background: $brand_primay_gradient;
+    font-weight: bold;
+
+    // tablet size media queries at 700px
+    @media screen and (min-width: 700px) {
+        width: 98px;
+        text-align: center;
+        padding: 4.8px 0;
+    }
+}
