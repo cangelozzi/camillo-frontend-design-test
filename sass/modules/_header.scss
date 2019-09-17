@@ -21,6 +21,11 @@ header {
 
     // tablet size media queries at 700px
     @media screen and (min-width: 700px) {
+        width: 25%;
+    }
+
+    // tablet size media queries at 1100px
+    @media screen and (min-width: 1100px) {
         width: 15%;
     }
 
@@ -44,7 +49,7 @@ header {
         height: 4rem;
         width: 4rem;
         position: fixed;
-        top: 0.9rem;
+        top: 0.3rem;
         left: 2rem;
         z-index: 2000;
         text-align: center;

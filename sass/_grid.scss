@@ -1,5 +1,6 @@
 // GRID VARIABLES
 $grid-width: 122rem;
+$tab-width: 70rem;
 $gutter_vertical: 8rem;
 $gutter_vertical-small: 6rem;
 $gutter_horizontal: 6rem;
@@ -8,6 +9,16 @@ $gutter_horizontal: 6rem;
     max-width: $grid-width;
     // background-color: #eee;
     margin: 0 auto;
+
+    // tablet size media queries at 700px
+    @media screen and (min-width: 700px) {
+        max-width: $tab-width;
+    }
+
+    // desktop size media queries at 1100px
+    @media screen and (min-width: 1100px) {
+        max-width: $grid-width;
+    }
 
     // include floats CLEARFIX mixin in the parent
     @include clearfix;
