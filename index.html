@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Camillo's Frontend Design Test</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/main.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
         integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous">
@@ -46,8 +46,47 @@
             </div>
         </header>
         <!-- HEADER end -->
+
+        <!-- HERO -->
+        <section id="hero">
+            <h2 class="hidden">HERO introduction section</h2>
+
+            <img class="rellax" id="heroImg" src="images/hero-background.png"
+                alt="hero-background image, pink cloudy sky">
+
+            <div id="heroText">
+                <h2>Make event management a breeze</h2>
+                <p>ACME Events Inc. makes making beautiful event landing pages a DIY adventure.</p>
+                <button id="bookdemo">Book a Demo</button>
+            </div>
+        </section>
+
+        <!-- FEATURE -->
+        <section id="feature">
+            <img id="featureImage" src="images/heart-lamps.png" alt="heart lamps in night sky">
+
+            <div id="featureText">
+                <h2>Make your ticket holders happy</h2>
+                <p>A beautiful little sunset. Talent is a pursued interest. That is to say, anything you practice you
+                    can do. This is probably the greatest thing that's ever happened in my life. These things happen
+                    automatically. All you have to do is just let them happen.</p>
+                <p> Just let go - and fall like a little waterfall. Nothing's gonna make your husband or wife madder
+                    than coming home and having a snow-covered dinner. Just pretend you are a whisper floating across a
+                    mountain. Zip. That easy.</p>
+                <a href="#">View full feature list</a>
+            </div>
+        </section>
+
+        <!-- VIDEO EMBED -->
+        <section id="videoembed">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7KaYCj98quY" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+
     </main>
 
+    <script src="js/rellax.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 

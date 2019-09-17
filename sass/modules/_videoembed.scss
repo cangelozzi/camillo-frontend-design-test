@@ -1,0 +1,31 @@
+#videoembed {
+    background: $bg_site;
+    margin: 5rem 0;
+
+    // desktop size media queries at 1100px
+    @media screen and (min-width: 1100px) {
+        margin: 10rem 0;
+    }
+
+    iframe {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+        padding-top: 5.8rem;
+        padding-bottom: 5.9rem;
+        cursor: pointer;
+
+        // tablet size media queries at 700px
+        @media screen and (min-width: 700px) {
+            width: 56rem;
+            height: 31.5rem;
+        }
+
+        // desktop size media queries at 1100px
+        @media screen and (min-width: 1100px) {
+            width: 58rem;
+            height: 32.6rem;
+        }
+    }
+}
