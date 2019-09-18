@@ -1,6 +1,6 @@
 #feature {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     margin-top: 5rem;
@@ -14,7 +14,7 @@
 }
 
 #featureImage {
-    width: 80%;
+    width: 100%;
 
     // tablet size media queries at 700px
     @media screen and (min-width: 700px) {
@@ -28,11 +28,11 @@
 
     // desktop size media queries at 1100px
     @media screen and (min-width: 1100px) {
-        width: 58%;
+        width: 62%;
     }
 
     h2 {
-        font-size: $header5;
+        font-size: 1.7rem;
         font-weight: bold;
         letter-spacing: 0.63px;
         text-align: center;
@@ -49,7 +49,7 @@
     p {
         font-size: 1.2rem;
         letter-spacing: 0.33px;
-        width: 80%;
+        width: 100%;
         display: block;
         margin: 0.9rem auto;
 
@@ -71,7 +71,7 @@
         color: #3380ff;
         font-size: 1.2rem;
         letter-spacing: 0.33px;
-        width: 80%;
+        width: 100%;
         display: block;
         margin: 0.9rem auto;
 
@@ -83,18 +83,18 @@
         &::after {
             content: "";
             display: block;
-            width: 40%;
+            width: 41%;
             padding-top: 6px;
             border-bottom: $link_underline;
 
             // tablet size media queries at 700px
             @media screen and (min-width: 700px) {
-                width: 33%;
+                width: 35%;
             }
 
             // desktop size media queries at 1100px
             @media screen and (min-width: 1100px) {
-                width: 43.5%;
+                width: 51%;
             }
         }
 
