@@ -7,10 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Camillo's Frontend Design Test</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
-    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
-        integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous">
-    </script>
 </head>
 
 <body>
@@ -31,17 +30,17 @@
                         <h2 class="hidden">Page Navigation</h2>
                         <ul class="navigation__list">
                             <li class="navigation__item">
-                                <a href="#login" class="navigation__link">LOG-IN</a>
+                                <a tabindex="0" href="#login" class="navigation__link">LOG-IN</a>
                             </li>
                             <li class="navigation__item">
-                                <a href="#signup" class="navigation__link" id="signup__btn">SIGN UP</a>
+                                <a tabindex="0" href="#signup" class="navigation__link" id="signup__btn">SIGN UP</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <!-- logo image -->
                 <div id="mainLogo">
-                    <a href="/"><img src="images/generic-logo.png" alt="Generic Logo" /></a>
+                    <a tabindex="0" href="/"><img src="images/generic-logo.png" alt="Generic Logo" /></a>
                 </div>
             </div>
         </header>
@@ -57,12 +56,12 @@
             <div id="heroText">
                 <h2>Make event management a breeze</h2>
                 <p>ACME Events Inc. makes making beautiful event landing pages a DIY adventure.</p>
-                <button id="bookdemo">Book a Demo</button>
+                <button id="bookdemo" tabindex="0">Book a Demo</button>
             </div>
         </section>
 
         <!-- FEATURE -->
-        <section id="feature">
+        <section id="feature" class="row">
             <img id="featureImage" src="images/heart-lamps.png" alt="heart lamps in night sky">
 
             <div id="featureText">
@@ -73,16 +72,100 @@
                 <p> Just let go - and fall like a little waterfall. Nothing's gonna make your husband or wife madder
                     than coming home and having a snow-covered dinner. Just pretend you are a whisper floating across a
                     mountain. Zip. That easy.</p>
-                <a href="#">View full feature list</a>
+                <a href="#" tabindex="0">View full feature list</a>
             </div>
         </section>
 
         <!-- VIDEO EMBED -->
         <section id="videoembed">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/7KaYCj98quY" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                tabindex="0"></iframe>
         </section>
+
+        <!-- BOOK_A_DEMO CONTACT_FORM -->
+        <section id="bookdemo__contact" class="row">
+            <div id="input_selection">
+                <h2 id="bookdemo__contact-title">Book a demo</h2>
+                <div id="formerror">
+                    <p>HEADS UP! There are errors in the form below</p>
+                </div>
+                <form action="#">
+                    <label for="firstname" class="required-field">First name</label>
+                    <input tabindex="0" type="text" name="firstname" class="form_input" id="firstname" required />
+                    <small id="fname_error">First name is required</small>
+                    <label for="lastname" class="required-field">Last name</label>
+                    <input tabindex="0" type="text" name="lastname" class="form_input" id="lastname" required />
+                    <small id="lname_error">Last name is required</small>
+                    <label for="email" class="required-field">Email</label>
+                    <input tabindex="0" type="email" name="email" class="form_input" id="email" required />
+                    <small id="email_format">Expected email format: example@example.com</small>
+                    <small id="email_error">Email is required</small>
+                    <label for="phone" class="required-field">Phone Number</label>
+                    <input tabindex="0" type="tel" name="phone" class="form_input" id="phone" required />
+                    <small id="phone_error">Phone number is required</small>
+                    <input tabindex="0" type="submit" value="SIGN UP" />
+                </form>
+            </div>
+            <div>
+                <img id="eventimg" src="images/event-picture.png" alt="event people gathering">
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div id="footer_menu" class="row">
+                <div class="features_nav">
+                    <h3>Features</h3>
+                    <ul>
+                        <li tabindex="0"><a href="#">Event organizer tools</a></li>
+                        <li tabindex="0"><a href="#">Timer tools</a></li>
+                        <li tabindex="0"><a href="#">Charity co-ordinator tools</a></li>
+                        <li tabindex="0"><a href="#">Participant experience</a></li>
+                    </ul>
+                </div>
+                <div class="tools_nav">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li tabindex="0"><a href="#">Dashboard maker</a></li>
+                        <li tabindex="0"><a href="#">Data & analytics</a></li>
+                        <li tabindex="0"><a href="#">Email marketing tool</a></li>
+                        <li tabindex="0"><a href="#">Social promotion tool</a></li>
+                    </ul>
+                </div>
+                <div class="contact_nav">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li tabindex="0"><a href="tel:1-888-555-5555"><i class="fas fa-phone-alt"></i>1-888-555-5555</a>
+                        </li>
+                        <li tabindex="0"><a href="mailto: example@example.com"><i
+                                    class="fas fa-envelope"></i>example@example.com</a></li>
+                        <li tabindex="0"><a href="#"><i class="fas fa-map-marker-alt"></i>123 Fake Street, London, ON
+                                A1B 2C3</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="map_nav">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.835307894224!2d-81.25373184896192!3d42.98174277904775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef21d8c9d59fb%3A0xa637ea9287d6c236!2s103%20King%20St%2C%20London%2C%20ON%20N6A%206K1%2C%20Canada!5e0!3m2!1sen!2sit!4v1568817527036!5m2!1sen!2sit"
+                        width="270" height="135" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+
+            <div id="bottomwrapper">
+                <div id="footer_info" class="row">
+                    <div id="copyright">
+                        <p>&copy; Copyright Acme Inc. [20XX]</p>
+                    </div>
+
+                    <div id="social">
+                        <i tabindex="0" class="fab fa-facebook-square"></i>
+                        <i tabindex="0" class="fab fa-twitter-square"></i>
+                        <i tabindex="0" class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </main>
 
