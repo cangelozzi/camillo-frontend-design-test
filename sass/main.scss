@@ -7,7 +7,6 @@
 // import page fundamentals rules
 @import '_base';
 @import '_elements';
-@import '_mixins';
 @import '_grid';
 
 // import modules components
@@ -15,3 +14,5 @@
 @import 'modules/heropage';
 @import 'modules/feature';
 @import 'modules/videoembed';
+@import 'modules/bookdemo_contact';
+@import 'modules/footer';

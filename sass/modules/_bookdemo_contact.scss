@@ -1,0 +1,137 @@
+label {
+    cursor: pointer;
+    letter-spacing: 0.63px;
+    font-size: 1.2rem;
+    // font-size: 1.6rem;
+}
+
+#bookdemo__contact {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+
+    // desktop size media queries at 1100px
+    @media screen and (min-width: 1100px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-title {
+        font-weight: bold;
+        font-size: $header2;
+        margin-bottom: 3rem;
+        letter-spacing: 0.63px;
+    }
+}
+
+input[type=text],
+input[type=email],
+input[type=text],
+input[type=tel],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 13.8rem;
+    background-color: $success_bg;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.33px;
+    font-size: 1.6rem;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#eventimg {
+    width: 100%;
+    margin: 3rem 0;
+
+    // desktop size media queries at 1100px
+    @media screen and (min-width: 1100px) {
+        width: 47.1rem;
+        height: 35.7rem;
+    }
+}
+
+.required-field::after {
+    content: "*";
+    color: red;
+    margin-left: 0.3rem;
+}
+
+#input_selection {
+
+    // desktop size media queries at 1100px
+    @media screen and (min-width: 1100px) {
+        width: 56.9rem;
+    }
+
+}
+
+#formerror {
+    box-sizing: border-box;
+    height: 55px;
+    width: 300px;
+    border: $danger_border;
+    background-color: $danger_bg;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    // tablet size media queries at 700px
+    @media screen and (min-width: 700px) {
+        width: 700px;
+    }
+
+    // desktop size media queries at 1100px
+    @media screen and (min-width: 1100px) {
+        width: 569px;
+    }
+
+    p {
+        font-size: 1.1rem;
+        color: $color-white;
+        letter-spacing: 0.38px;
+        margin-left: 15px;
+
+        // tablet size media queries at 700px
+        @media screen and (min-width: 700px) {
+            font-size: $header5;
+        }
+    }
+}
+
+small {
+    color: $danger_bg;
+    font-size: 1.3rem;
+    letter-spacing: 0.51px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3rem;
+
+}
+
+#email_format {
+    margin-bottom: 0;
+}
+
+#formerror,
+#fname_error,
+#lname_error,
+#email_format,
+#email_error,
+#phone_error {
+    display: none;
+}

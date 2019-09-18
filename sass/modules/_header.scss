@@ -30,7 +30,7 @@ header {
     }
 
     img {
-        width: 13.9rem;
+        width: 16rem;
         position: relative;
         z-index: 3000;
     }
@@ -48,7 +48,7 @@ header {
         border-radius: 80%;
         height: 4rem;
         width: 4rem;
-        position: fixed;
+        position: absolute;
         top: 0.3rem;
         left: 2rem;
         z-index: 2000;
@@ -113,9 +113,6 @@ header {
             top: 1rem;
             height: auto;
         }
-
-        // Tablet LANDSCAPE media queries
-        @media screen and (min-device-width: 700px) and (orientation: landscape) {}
     }
 
     &__item {
@@ -135,6 +132,19 @@ header {
         @media screen and (min-width: 700px) {
             width: 14.5rem;
             text-align: center;
+        }
+
+        &:not(:first-child) {
+
+            // tablet size media queries at 700px
+            @media screen and (min-width: 700px) {
+                margin-right: -2.4rem;
+            }
+
+            // desktop size media queries at 1100px
+            @media screen and (min-width: 1100px) {
+                margin-right: -2.3rem;
+            }
         }
     }
 
