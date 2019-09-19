@@ -1,176 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Camillo's Frontend Design Test</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700&display=swap" rel="stylesheet">
-    <link type="text/css" rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <h1 class="hidden">Angelozzi Camillo Design Code Test</h1>
-        <!-- HEADER -->
-        <header id="mainHeader">
-            <h2 class="hidden">Hamburger Navigation</h2>
-            <div class="row tophead">
-                <!-- FLOATING NAVIGATION TOGGLE BUTTON -->
-                <div class="navigation">
-                    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-                    <label for="navi-toggle" class="navigation__button">
-                        <span class="navigation__icon">&nbsp;</span>
-                    </label>
-                    <div class="navigation__background">&nbsp;</div>
-                    <nav class="navigation__nav">
-                        <h2 class="hidden">Page Navigation</h2>
-                        <ul class="navigation__list">
-                            <li class="navigation__item">
-                                <a tabindex="0" href="#login" class="navigation__link">LOG-IN</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a tabindex="0" href="#signup" class="navigation__link" id="signup__btn">SIGN UP</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- logo image -->
-                <div id="mainLogo">
-                    <a tabindex="0" href="/"><img src="images/generic-logo.png" alt="Generic Logo" /></a>
-                </div>
+      <h1 class="hidden">Angelozzi Camillo Design Code Test</h1>
+      <!-- HEADER -->
+      <header id="mainHeader">
+        <h2 class="hidden">Hamburger Navigation</h2>
+        <div class="row tophead">
+          <!-- FLOATING NAVIGATION TOGGLE BUTTON -->
+          <div class="navigation">
+            <input
+              type="checkbox"
+              class="navigation__checkbox"
+              id="navi-toggle"
+            />
+            <label for="navi-toggle" class="navigation__button">
+              <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+              <h2 class="hidden">Page Navigation</h2>
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a tabindex="0" href="#login" class="navigation__link"
+                    >LOG-IN</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a
+                    tabindex="0"
+                    href="#bookdemo__contact"
+                    class="navigation__link"
+                    id="signup__btn"
+                    >SIGN UP</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- logo image -->
+          <div id="mainLogo">
+            <a tabindex="0" href="/"
+              ><img src="images/generic-logo.png" alt="Generic Logo"
+            /></a>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER end -->
+
+      <!-- HERO -->
+      <section id="hero">
+        <h2 class="hidden">HERO introduction section</h2>
+
+        <img
+          class="rellax"
+          id="heroImg"
+          src="images/hero-background.png"
+          alt="hero-background image, pink cloudy sky"
+        />
+
+        <div id="heroText">
+          <h2>Make event management a breeze</h2>
+          <p>
+            ACME Events Inc. makes making beautiful event landing pages a DIY
+            adventure.
+          </p>
+          <button id="bookdemo" tabindex="0">Book a Demo</button>
+        </div>
+      </section>
+
+      <!-- FEATURE -->
+      <section id="feature" class="row">
+        <img
+          id="featureImage"
+          src="images/heart-lamps.png"
+          alt="heart lamps in night sky"
+        />
+
+        <div id="featureText">
+          <h2>Make your ticket holders happy</h2>
+          <p>
+            A beautiful little sunset. Talent is a pursued interest. That is to
+            say, anything you practice you can do. This is probably the greatest
+            thing that's ever happened in my life. These things happen
+            automatically. All you have to do is just let them happen.
+          </p>
+          <p>
+            Just let go - and fall like a little waterfall. Nothing's gonna make
+            your husband or wife madder than coming home and having a
+            snow-covered dinner. Just pretend you are a whisper floating across
+            a mountain. Zip. That easy.
+          </p>
+          <a href="#" tabindex="0">View full feature list</a>
+        </div>
+      </section>
+
+      <!-- VIDEO EMBED -->
+      <section id="videoembed">
+        <h2 class="hidden">Video embeded section</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/7KaYCj98quY"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          tabindex="0"
+        ></iframe>
+      </section>
+
+      <!-- BOOK_A_DEMO CONTACT_FORM -->
+      <section id="bookdemo__contact" class="row">
+        <div id="input_selection">
+          <h2 id="bookdemo__contact-title">Book a demo</h2>
+
+          <div id="formerror">
+            <p>HEADS UP! There are errors in the form below</p>
+          </div>
+
+          <div id="dots">
+            <img
+              src="images/spinner-of-dots.svg"
+              alt="spinning dots after form submission"
+            />
+            <p>Submitting...</p>
+          </div>
+
+          <div id="demosent">
+            <div class="oval">
+              <i class="fas fa-check"></i>
             </div>
-        </header>
-        <!-- HEADER end -->
-
-        <!-- HERO -->
-        <section id="hero">
-            <h2 class="hidden">HERO introduction section</h2>
-
-            <img class="rellax" id="heroImg" src="images/hero-background.png"
-                alt="hero-background image, pink cloudy sky">
-
-            <div id="heroText">
-                <h2>Make event management a breeze</h2>
-                <p>ACME Events Inc. makes making beautiful event landing pages a DIY adventure.</p>
-                <button id="bookdemo" tabindex="0">Book a Demo</button>
+            <div class="text_success">
+              <h2>Demo request sent!</h2>
+              <p>
+                Someone will reach out to schedule your demo within the next 48
+                business hours
+              </p>
+              <p id="anotherdemo">Request another demo</p>
             </div>
-        </section>
+          </div>
 
-        <!-- FEATURE -->
-        <section id="feature" class="row">
-            <img id="featureImage" src="images/heart-lamps.png" alt="heart lamps in night sky">
+          <form action="#" id="bookdemoform" novalidate>
+            <label for="firstname" class="required-field">First name</label>
+            <input
+              tabindex="0"
+              type="text"
+              name="firstname"
+              class="form_input"
+              id="firstname"
+            />
+            <small id="fname_error">First name is required</small>
+            <label for="lastname" class="required-field">Last name</label>
+            <input
+              tabindex="0"
+              type="text"
+              name="lastname"
+              class="form_input"
+              id="lastname"
+            />
+            <small id="lname_error">Last name is required</small>
+            <label for="email" class="required-field">Email</label>
+            <input
+              tabindex="0"
+              type="email"
+              name="email"
+              class="form_input"
+              id="email"
+            />
+            <small id="email_format"
+              >Expected email format: example@example.com</small
+            >
+            <small id="email_error">Email is required</small>
+            <label for="phone" class="required-field">Phone Number</label>
+            <input
+              tabindex="0"
+              type="tel"
+              name="phone"
+              class="form_input"
+              id="phone"
+            />
+            <small id="phone_error">Phone number is required</small>
+            <input tabindex="0" type="submit" value="SIGN UP" id="signup" />
+          </form>
+        </div>
+        <div>
+          <img
+            id="eventimg"
+            src="images/event-picture.png"
+            alt="event people gathering"
+          />
+        </div>
+      </section>
 
-            <div id="featureText">
-                <h2>Make your ticket holders happy</h2>
-                <p>A beautiful little sunset. Talent is a pursued interest. That is to say, anything you practice you
-                    can do. This is probably the greatest thing that's ever happened in my life. These things happen
-                    automatically. All you have to do is just let them happen.</p>
-                <p> Just let go - and fall like a little waterfall. Nothing's gonna make your husband or wife madder
-                    than coming home and having a snow-covered dinner. Just pretend you are a whisper floating across a
-                    mountain. Zip. That easy.</p>
-                <a href="#" tabindex="0">View full feature list</a>
+      <!-- FOOTER -->
+      <footer>
+        <div id="footer_menu" class="row">
+          <div class="features_nav">
+            <h3>Features</h3>
+            <ul>
+              <li tabindex="0"><a href="#">Event organizer tools</a></li>
+              <li tabindex="0"><a href="#">Timer tools</a></li>
+              <li tabindex="0"><a href="#">Charity co-ordinator tools</a></li>
+              <li tabindex="0"><a href="#">Participant experience</a></li>
+            </ul>
+          </div>
+          <div class="tools_nav">
+            <h3>Tools</h3>
+            <ul>
+              <li tabindex="0"><a href="#">Dashboard maker</a></li>
+              <li tabindex="0"><a href="#">Data & analytics</a></li>
+              <li tabindex="0"><a href="#">Email marketing tool</a></li>
+              <li tabindex="0"><a href="#">Social promotion tool</a></li>
+            </ul>
+          </div>
+          <div class="contact_nav">
+            <h3>Contact</h3>
+            <ul>
+              <li tabindex="0">
+                <a href="tel:1-888-555-5555"
+                  ><i class="fas fa-phone-alt"></i>1-888-555-5555</a
+                >
+              </li>
+              <li tabindex="0">
+                <a href="mailto:example@example.com"
+                  ><i class="fas fa-envelope"></i>example@example.com</a
+                >
+              </li>
+              <li tabindex="0">
+                <a href="#"
+                  ><i class="fas fa-map-marker-alt"></i>123 Fake Street, London,
+                  ON A1B 2C3</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="map_nav">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.835307894224!2d-81.25373184896192!3d42.98174277904775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef21d8c9d59fb%3A0xa637ea9287d6c236!2s103%20King%20St%2C%20London%2C%20ON%20N6A%206K1%2C%20Canada!5e0!3m2!1sen!2sit!4v1568817527036!5m2!1sen!2sit"
+              width="270"
+              height="135"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div>
+
+        <div id="bottomwrapper">
+          <div id="footer_info" class="row">
+            <div id="copyright">
+              <p>&copy; Copyright Acme Inc. <span id="c_year"></span></p>
             </div>
-        </section>
 
-        <!-- VIDEO EMBED -->
-        <section id="videoembed">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7KaYCj98quY" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                tabindex="0"></iframe>
-        </section>
-
-        <!-- BOOK_A_DEMO CONTACT_FORM -->
-        <section id="bookdemo__contact" class="row">
-            <div id="input_selection">
-                <h2 id="bookdemo__contact-title">Book a demo</h2>
-                <div id="formerror">
-                    <p>HEADS UP! There are errors in the form below</p>
-                </div>
-                <form action="#">
-                    <label for="firstname" class="required-field">First name</label>
-                    <input tabindex="0" type="text" name="firstname" class="form_input" id="firstname" required />
-                    <small id="fname_error">First name is required</small>
-                    <label for="lastname" class="required-field">Last name</label>
-                    <input tabindex="0" type="text" name="lastname" class="form_input" id="lastname" required />
-                    <small id="lname_error">Last name is required</small>
-                    <label for="email" class="required-field">Email</label>
-                    <input tabindex="0" type="email" name="email" class="form_input" id="email" required />
-                    <small id="email_format">Expected email format: example@example.com</small>
-                    <small id="email_error">Email is required</small>
-                    <label for="phone" class="required-field">Phone Number</label>
-                    <input tabindex="0" type="tel" name="phone" class="form_input" id="phone" required />
-                    <small id="phone_error">Phone number is required</small>
-                    <input tabindex="0" type="submit" value="SIGN UP" />
-                </form>
+            <div id="social">
+              <i tabindex="0" class="fab fa-facebook-square"></i>
+              <i tabindex="0" class="fab fa-twitter-square"></i>
+              <i tabindex="0" class="fab fa-instagram"></i>
             </div>
-            <div>
-                <img id="eventimg" src="images/event-picture.png" alt="event people gathering">
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer>
-            <div id="footer_menu" class="row">
-                <div class="features_nav">
-                    <h3>Features</h3>
-                    <ul>
-                        <li tabindex="0"><a href="#">Event organizer tools</a></li>
-                        <li tabindex="0"><a href="#">Timer tools</a></li>
-                        <li tabindex="0"><a href="#">Charity co-ordinator tools</a></li>
-                        <li tabindex="0"><a href="#">Participant experience</a></li>
-                    </ul>
-                </div>
-                <div class="tools_nav">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li tabindex="0"><a href="#">Dashboard maker</a></li>
-                        <li tabindex="0"><a href="#">Data & analytics</a></li>
-                        <li tabindex="0"><a href="#">Email marketing tool</a></li>
-                        <li tabindex="0"><a href="#">Social promotion tool</a></li>
-                    </ul>
-                </div>
-                <div class="contact_nav">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li tabindex="0"><a href="tel:1-888-555-5555"><i class="fas fa-phone-alt"></i>1-888-555-5555</a>
-                        </li>
-                        <li tabindex="0"><a href="mailto: example@example.com"><i
-                                    class="fas fa-envelope"></i>example@example.com</a></li>
-                        <li tabindex="0"><a href="#"><i class="fas fa-map-marker-alt"></i>123 Fake Street, London, ON
-                                A1B 2C3</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="map_nav">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.835307894224!2d-81.25373184896192!3d42.98174277904775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef21d8c9d59fb%3A0xa637ea9287d6c236!2s103%20King%20St%2C%20London%2C%20ON%20N6A%206K1%2C%20Canada!5e0!3m2!1sen!2sit!4v1568817527036!5m2!1sen!2sit"
-                        width="270" height="135" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                </div>
-            </div>
-
-            <div id="bottomwrapper">
-                <div id="footer_info" class="row">
-                    <div id="copyright">
-                        <p>&copy; Copyright Acme Inc. [20XX]</p>
-                    </div>
-
-                    <div id="social">
-                        <i tabindex="0" class="fab fa-facebook-square"></i>
-                        <i tabindex="0" class="fab fa-twitter-square"></i>
-                        <i tabindex="0" class="fab fa-instagram"></i>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
+          </div>
+        </div>
+      </footer>
     </main>
 
     <script src="js/rellax.min.js"></script>
     <script src="js/app.js"></script>
-</body>
-
+  </body>
 </html>
