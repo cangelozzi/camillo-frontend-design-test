@@ -1,9 +1,13 @@
 # Frontend Design Code Test
 
 :white_check_mark: - Hero Image Background parallax using ["RellaxJS"](https://dixonandmoe.com/rellax/)
+
 :white_check_mark: - Mobile First responsive
+
 :white_check_mark: - No Browser Form validation! All validation done by custom vanilla js!
+
 :white_check_mark: - Have the copyright update dynamically year over year
+
 :white_check_mark: - Youtube video (Pink Floyd!) + include a google map of 103 King Street, London Ontario
 
 
