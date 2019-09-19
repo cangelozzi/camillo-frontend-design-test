@@ -4,7 +4,7 @@
 
 - To test in DEVELOPMENT environment use `npm run dev`
 
-=======================================================================================================
+=====================================================
 
 :white_check_mark: - Hero Image Background parallax using ["RellaxJS"](https://dixonandmoe.com/rellax/)
 
